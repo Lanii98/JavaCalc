@@ -3,8 +3,7 @@ import javax.swing.*;
 public class Division extends UserChoiceDialog
 {
 
-    public static void divide()
-    {
+    public static void divide() {
 
         double num1, num2, total;
         String num1AS, num2AS;
@@ -17,15 +16,13 @@ public class Division extends UserChoiceDialog
         num1 = Integer.parseInt(num1AS);
         num2 = Integer.parseInt(num2AS);
 
-        if(num2 > num1)
-        {
+        if(num2 > num1) {
             total = num2 / num1;
             JOptionPane.showMessageDialog(null,num2 +
                     " divided by " +  num1 + " = " + total,"Calculator",
                     JOptionPane.INFORMATION_MESSAGE);
         }
-        else
-        {
+        else {
             total = num1 / num2;
             JOptionPane.showMessageDialog(null,num1 +
                     " divided by " +  num2 + " = " + total,"Calculator",

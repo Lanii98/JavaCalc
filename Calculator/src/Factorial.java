@@ -3,8 +3,7 @@ import javax.swing.*;
 public class Factorial
 {
 
-    public static void factorial()
-    {
+    public static void factorial() {
 
         String numberAS = "";
         int number = 0, result = 0;

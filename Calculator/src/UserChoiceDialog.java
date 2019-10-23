@@ -3,11 +3,9 @@ import javax.swing.*;
 public class UserChoiceDialog extends Calculator
 {
 
-    public static void choiceDialog()
-    {
+    public static void choiceDialog() {
 
         String choices = "Please choose an option: \n 1) Addition \n 2) Subtraction \n 3) Division \n 4) Multiplication \n 5) Factorial \n 6) Power \n 7) Quit\n\n";
-
         int choice = Integer.parseInt(JOptionPane.showInputDialog(null,choices,"Main Menu",JOptionPane.QUESTION_MESSAGE));
 
         if(choice <= 0 || choice >= 8)

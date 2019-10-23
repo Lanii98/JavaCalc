@@ -2,8 +2,7 @@ import javax.swing.*;
 
 public class Multiplication extends UserChoiceDialog
 {
-    public static void multiply()
-    {
+    public static void multiply() {
         String numbersAS = "";
         double numbers, totalMult = 1.0;
         int numCount = 0;
@@ -16,8 +15,7 @@ public class Multiplication extends UserChoiceDialog
                 numCount++;
                 totalMult = totalMult * numbers;
             } //end try
-            catch(NumberFormatException e)
-            {
+            catch(NumberFormatException e) {
                 if(!numbersAS.equals("q") && numCount == 0)
                 {
                     JOptionPane.showMessageDialog(null,

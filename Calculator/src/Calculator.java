@@ -4,23 +4,9 @@ import java.awt.event.ActionEvent;
 
 import static javax.swing.UIManager.setLookAndFeel;
 
-public class Calculator
-{
+public class Calculator {
 
-    public static void main(String[] args)
-    {
-
-        try {
-            setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (UnsupportedLookAndFeelException e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) {
 
         JFrame welcome = new JFrame("Calculator App");
 
@@ -46,8 +32,7 @@ public class Calculator
 
     } //end main
 
-    public static void goodbye()
-    {
+    public static void goodbye() {
 
         JFrame goodbye = new JFrame("Calculator App");
 
