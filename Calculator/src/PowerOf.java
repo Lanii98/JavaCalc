@@ -9,8 +9,16 @@ public class PowerOf extends UserChoiceDialog {
         toPower = Integer.parseInt(JOptionPane.showInputDialog("Enter the power"));
 
         result = power(number,toPower);
-        JOptionPane.showMessageDialog(null,number + " to the power of "
-                + toPower + " = " + result,"PowerOf",JOptionPane.INFORMATION_MESSAGE);
+
+        if(result == 1)
+        {
+            JOptionPane.showMessageDialog(null,"You did not provide a valid power number","Error",JOptionPane.WARNING_MESSAGE);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,number + " to the power of "
+                    + toPower + " = " + result,"PowerOf",JOptionPane.INFORMATION_MESSAGE);
+        }
 
         UserChoiceDialog.choiceDialog();
     }
@@ -27,8 +35,7 @@ public class PowerOf extends UserChoiceDialog {
         }
         else
         {
-            int results = x * power(x,y-1);
-            return results;
+            return x * power(x,y-1);
         }
 
     }
