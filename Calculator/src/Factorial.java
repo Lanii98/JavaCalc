@@ -21,8 +21,15 @@ public class Factorial
 
         result = factorial(number);
 
-        JOptionPane.showMessageDialog(null,"The factorial of " + number + " is " + result,
-                "Factorial",JOptionPane.INFORMATION_MESSAGE);
+        if(result == 1)
+        {
+            JOptionPane.showMessageDialog(null,"You did not provide a valid power number","Error",JOptionPane.WARNING_MESSAGE);
+            factorial();
+        } else
+        {
+            JOptionPane.showMessageDialog(null,"The factorial of " + number + " is " + result,
+                    "Factorial",JOptionPane.INFORMATION_MESSAGE);
+        }
 
         UserChoiceDialog.choiceDialog();
 
