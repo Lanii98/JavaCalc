@@ -14,29 +14,14 @@ public class UserChoiceDialog extends Calculator
             UserChoiceDialog.choiceDialog();
         }
         else {
-            switch(choice) {
-
-                case 1: Addition.add();
-                    break;
-
-                case 2: Subtraction.subtract();
-                    break;
-
-                case 3: Division.divide();
-                    break;
-
-                case 4: Multiplication.multiply();
-                    break;
-
-                case 5: Factorial.factorial();
-                    break;
-
-                case 6: PowerOf.userInts();
-                    break;
-
-                case 7: Calculator.goodbye();
-                    break;
-
+            switch (choice) {
+                case 1 -> Addition.add();
+                case 2 -> Subtraction.subtract();
+                case 3 -> Division.divide();
+                case 4 -> Multiplication.multiply();
+                case 5 -> Factorial.factorial();
+                case 6 -> PowerOf.userInts();
+                case 7 -> Calculator.goodbye();
             } //end switch
         } //end else
 
