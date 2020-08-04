@@ -3,7 +3,7 @@ import javax.swing.*;
 public class PowerOf extends UserChoiceDialog {
 
     public static void userInts() {
-        int number = 0, result = 0, toPower = 0;
+        int number, result, toPower;
 
         number = Integer.parseInt(JOptionPane.showInputDialog("Enter a number"));
         toPower = Integer.parseInt(JOptionPane.showInputDialog("Enter the power"));
@@ -13,6 +13,7 @@ public class PowerOf extends UserChoiceDialog {
         if(result == 1)
         {
             JOptionPane.showMessageDialog(null,"You did not provide a valid power number","Error",JOptionPane.WARNING_MESSAGE);
+            userInts();
         }
         else
         {
