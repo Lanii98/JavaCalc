@@ -13,7 +13,13 @@ public class Subtraction extends UserChoiceDialog
 
             try {
 
-                numbersAS = JOptionPane.showInputDialog(null,"Enter number " + (numCount + 1) + ". (q to quit)","Subtraction",JOptionPane.QUESTION_MESSAGE);
+                numbersAS = JOptionPane.showInputDialog(null,
+                                                        "Enter number " + 
+                                                        (numCount + 1) + 
+                                                        ". (q to quit)",
+                                                        "Subtraction",
+                                                        JOptionPane.QUESTION_MESSAGE
+                                                    );
 
                 //Makes sure totalSub is not 0
                 if(numCount == 1)

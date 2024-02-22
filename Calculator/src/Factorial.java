@@ -27,8 +27,12 @@ public class Factorial
             factorial();
         } else
         {
-            JOptionPane.showMessageDialog(null,"The factorial of " + number + " is " + result,
-                    "Factorial",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null,
+                    number + "! = " + 
+                    result,
+                    "Factorial",
+                    JOptionPane.INFORMATION_MESSAGE
+                );
         }
 
         UserChoiceDialog.choiceDialog();
@@ -36,12 +40,11 @@ public class Factorial
     }
 
     private static int factorial(int n) {
-        if(n == 0)
-            return 1;
-        if(n <= -1)
-            return 1;
-        else
-            return(n * factorial(n-1));
+        if (n >  0) {
+            return n * factorial(n -  1);
+        } else {
+            return  1;
+        }
     }
 
 }

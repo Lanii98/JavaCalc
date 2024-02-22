@@ -18,15 +18,27 @@ public class Division extends UserChoiceDialog
 
         if(num2 > num1) {
             total = num2 / num1;
-            JOptionPane.showMessageDialog(null,num2 +
-                    " divided by " +  num1 + " = " + total,"Calculator",
-                    JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null,
+                    num2 +
+                    " / " +  
+                    num1 + 
+                    " = " + 
+                    total,"Calculator",
+                    JOptionPane.INFORMATION_MESSAGE
+                );
         }
         else {
             total = num1 / num2;
-            JOptionPane.showMessageDialog(null,num1 +
-                    " divided by " +  num2 + " = " + total,"Calculator",
-                    JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null,
+                    num1 +
+                    " / " +  
+                    num2 + 
+                    " = " + 
+                    total,"Calculator",
+                    JOptionPane.INFORMATION_MESSAGE
+                );
         }
 
         UserChoiceDialog.choiceDialog();
