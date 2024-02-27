@@ -30,11 +30,12 @@ public class Addition extends UserChoiceDialog
 
                 }
             } //end catch
+
         } //end while
 
         if(numCount >= 2) {
 
-            JOptionPane.showMessageDialog(null,"The total of all " + numCount + " numbers is: " + totalAdd,"Addition",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null,"The total is: " + totalAdd,"Addition",JOptionPane.INFORMATION_MESSAGE);
             UserChoiceDialog.choiceDialog();
 
         }

@@ -9,7 +9,14 @@ public class Multiplication extends UserChoiceDialog
 
         while(!numbersAS.equals("q")) {
             try {
-                numbersAS = JOptionPane.showInputDialog(null,"Enter number " + (numCount + 1) + ". (q to quit)","Multiplication",JOptionPane.QUESTION_MESSAGE);
+                numbersAS = JOptionPane.showInputDialog(
+                    null,
+                    "Enter number " + 
+                    (numCount + 1) + 
+                    ". (q to quit)",
+                    "Multiplication",
+                    JOptionPane.QUESTION_MESSAGE
+                );
                 numbers = Double.parseDouble(numbersAS);
 
                 numCount++;
@@ -26,8 +33,14 @@ public class Multiplication extends UserChoiceDialog
         } //end while
 
         if(numCount >= 2) {
-            JOptionPane.showMessageDialog(null,"The value of all " + numCount +
-                    " numbers multiplied is: " + totalMult,"Multiplication",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(
+                null,"The value of all " + 
+                numCount +
+                " numbers multiplied is: " + 
+                totalMult,"Multiplication",
+                JOptionPane.INFORMATION_MESSAGE
+            );
+            
             UserChoiceDialog.choiceDialog();
         }
         else if(numCount == 1) {

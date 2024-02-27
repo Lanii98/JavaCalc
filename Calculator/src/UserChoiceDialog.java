@@ -18,11 +18,21 @@ public class UserChoiceDialog extends Calculator
 
         if(choice <= 0 || choice >= 8)
         {
-            JOptionPane.showMessageDialog(null,"You have entered an invalid number","Calculator",JOptionPane.ERROR_MESSAGE);
+            
+            JOptionPane.showMessageDialog(
+                null,
+                "You have entered an invalid number",
+                "Calculator",
+                JOptionPane.ERROR_MESSAGE
+            );
+
             UserChoiceDialog.choiceDialog();
+
         }
         else {
+
             switch (choice) {
+
                 case 1 -> Addition.add();
                 case 2 -> Subtraction.subtract();
                 case 3 -> Division.divide();
@@ -30,7 +40,9 @@ public class UserChoiceDialog extends Calculator
                 case 5 -> Factorial.factorial();
                 case 6 -> PowerOf.userInts();
                 case 7 -> Calculator.goodbye();
+
             } //end switch
+            
         } //end else
 
     } //end choiceDialog()
